@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Name - Tourism Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white text-black">
+
+<!-- Navigation Bar -->
+<nav class="bg-black p-4">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-white text-black text-2xl font-semibold">Tourism Site</a>
+            <ul class="flex space-x-5">
+                <li><a href="index.html" class="text-white text-black">Home</a></li>
+                <li><a href="destinations.html" class="text-white text-black">Destinations</a></li>
+                <li><a href="help.html" class="text-white text-black">Help</a></li>
+                <li><a href="about.html" class="text-white text-black">About</a></li>
+                <li><a href="contact.html" class="text-white text-black">Contact</a></li>
+                <li><a href="login.html" class="text-white text-black">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<div class="bg-cover bg-center h-80 bg-image-url text-white text-black flex items-center" style="background-image: url('agra.jpg');">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-semibold">Agra</h1>
+        <p class="text-lg mt-2">Explore the beauty of this amazing destination.</p>
+    </div>
+</div>
+
+<!-- Destination Information -->
+<div class="container mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4">About Destination</h2>
+    <p class="text-gray-600">
+        Agra is a historic city located in the northern Indian state of Uttar Pradesh. It is renowned for its cultural and historical significance, primarily due to the presence of some of India's most iconic landmarks and monuments 
+    </p>
+</div>
+
+<!-- Attractions Section -->
+<div class="container mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Popular Attractions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Attraction Card (Repeat as needed) -->
+        <div class="bg-white text-black rounded-lg shadow-md">
+            <img src="taj2.jpg" alt="Attraction 1" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Tajmahal</h3>
+                <p class="text-gray-600">Explore the beauty of this Tajmahal .</p>
+                <a href="book.html" class="mt-2 text-blue-500 hover:underline">Book now</a>
+            </div>
+        </div>
+        <div class="bg-white text-black rounded-lg shadow-md">
+            <img src="agraf.jpg" alt="Attraction 2" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Agra Fort</h3>
+                <p class="text-gray-600">Discover the wonders of this Agra Fort.</p>
+                <a href="book.html" class="mt-2 text-blue-500 hover:underline">Book now</a>
+            </div>
+        </div>
+        <!-- End of Attraction Card -->
+    </div>
+</div>
+
+<!-- Additional Information Section (e.g., tables, text, images, etc.) -->
+<div class="container mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Additional Information</h2>
+    <!-- Example: Table with Destination Details -->
+    <table class="w-full border-collapse border border-gray-300">
+        <thead>
+            <tr>
+                <th class="border border-gray-300 p-2">Category</th>
+                <th class="border border-gray-300 p-2">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-300 p-2">Location</td>
+                <td class="border border-gray-300 p-2">Taj Mahal</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 p-2">Location</td>
+                <td class="border border-gray-300 p-2">Agra Fort</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 p-2">Climate</td>
+                <td class="border border-gray-300 p-2">Tropical</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-black p-4 mt-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2023 Tourism Site. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

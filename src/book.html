@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Booking - Tourism Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+<!-- Navigation Bar -->
+<nav class="bg-black p-4">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-semibold">My Tours</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white text-black">Home</a></li>
+                <li><a href="destinations.html" class="text-white text-black">Destinations</a></li>
+                <li><a href="help.html" class="text-white text-black">Help</a></li>
+                <li><a href="about.html" class="text-white text-black">About</a></li>
+                <li><a href="contact.html" class="text-white text-black">Contact</a></li>
+                <li><a href="login.html" class="text-white text-black">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Trip Booking Form -->
+<div class="container mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Book Your Trip</h2>
+    <div class="bg-gray-500 text-black rounded-lg shadow-md p-4">
+        <form action="#" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="name" class="block">Your Name</label>
+                    <input type="text" id="name" name="name" class="w-full border rounded p-2" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block">Your Email</label>
+                    <input type="email" id="email" name="email" class="w-full border rounded p-2" placeholder="Your Email">
+                </div>
+            </div>
+            <div>
+                <label for="destination" class="block">Destination</label>
+                <input type="text" id="destination" name="destination" class="w-full border rounded p-2" placeholder="Destination">
+            </div>
+            <div>
+                <label for="departure-date" class="block">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" class="w-full border rounded p-2">
+            </div>
+            <div>
+                <label for="return-date" class="block">Return Date</label>
+                <input type="date" id="return-date" name="return-date" class="w-full border rounded p-2">
+            </div>
+            <div>
+                <label for="adults" class="block">Number of Adults</label>
+                <input type="number" id="adults" name="adults" class="w-full border rounded p-2" min="1">
+            </div>
+            <div>
+                <label for="children" class="block">Number of Children</label>
+                <input type="number" id="children" name="children" class="w-full border rounded p-2" min="0">
+            </div>
+            <div>
+                <label for="message" class="block">Additional Notes</label>
+                <textarea id="message" name="message" class="w-full border rounded p-2 h-32" placeholder="Any special requests or notes"></textarea>
+            </div>
+            <button type="submit"> <a href="booksuc.html" class="w-full bg-white text-black p-2 rounded-lg hover:bg-gray-800 hover:text-white">Book Now</a></button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-black text-white p-4 mt-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2023 Tourism Site. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
